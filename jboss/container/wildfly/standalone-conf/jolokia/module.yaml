@@ -16,4 +16,5 @@ artifacts:
   target: jolokia-jvm-1.6.2.jar
   name: jolokia-jvm-1.6.2.redhat-00002-agent.jar
 #  md5: d27b2fc0d1ed8ed50a7e661db839c83a
+  md5: ~
 
