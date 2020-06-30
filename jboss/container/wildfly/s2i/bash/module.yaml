@@ -48,6 +48,9 @@ envs:
 - name: S2I_COPY_SERVER
   description: "When set to true, copy the galleon provisioned server to s2i output dir to be consumed by next build in the chain. True by default."
   value: "true"
+- name: MAVEN_ARGS_APPEND
+  description: "Default maven args to append."
+  value: "-Dcom.redhat.xpaas.repo.jbossorg"
 execute:
 - script: configure.sh
 
