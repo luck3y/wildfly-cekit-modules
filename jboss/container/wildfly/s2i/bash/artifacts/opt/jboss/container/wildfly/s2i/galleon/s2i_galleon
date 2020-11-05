@@ -267,5 +267,7 @@ function galleon_replace_server() {
   cp -prf $JBOSS_HOME/standalone/deployments/* /deployments
   rm -rf $JBOSS_HOME/standalone/deployments
   ln -s /deployments $JBOSS_HOME/standalone/deployments
-  chown -R jboss:root $JBOSS_HOME && chmod -R ug+rwX $JBOSS_HOME
+  chown -R jboss:root $JBOSS_HOME && chmod -R ug+rwX $JBOSS_HOME || true
+  # this is added temporarily to work around expected directories
+  mkdir -p /tmp/artifacts/configuration/
 }
